@@ -1,0 +1,23 @@
+GITHUB COPILOT TASK — AI VAULT 3D UNIVERSE UI
+
+Open and modify ai-vault-worker.js. Keep the existing Cloudflare Worker backend, D1 database operations, API routes, MCP tools, authentication, memory parsing, and all existing UI functionality working.
+
+Requested changes:
+1. Transform the Universe canvas from a flat 2D-looking presentation into a convincing 3D space scene. Use perspective, depth, parallax, subtle orbital depth, and appropriate lighting/glow. Do not merely add CSS shadows to the existing 2D scene.
+2. Make background stars react naturally to camera movement: when the user drags/pans the universe, stars should move with convincing depth-based parallax.
+3. Make background stars respond to zoom: zooming in/out should change their apparent position/scale/speed consistently with their depth, creating a 3D camera effect.
+4. When the user is not interacting, keep the camera/universe gently rotating continuously. Pause or reduce the automatic movement during active pointer/touch interaction, then smoothly resume afterward.
+5. Preserve the existing visual concept: compact white About Me stars in the center, colored session stars orbiting around them, related session stars grouped by color family, interactive star selection, tooltips, pan, wheel/pinch zoom, zoom buttons, and mobile support.
+6. Keep the About Me stars unclickable individually if that is how the current design intends them; preserve the existing About Me interaction as a whole.
+7. Keep performance smooth. Use requestAnimationFrame, delta time, resize handling, and device-pixel-ratio limits where appropriate. Avoid unnecessary allocations inside the animation loop.
+8. Do not remove or rewrite backend functionality. Do not introduce external libraries unless absolutely necessary; prefer the existing canvas implementation.
+
+Important workflow:
+- First inspect the entire existing file and identify the canvas rendering, camera, pointer, zoom, and animation code.
+- Make the changes directly in the existing file, not as a separate demo.
+- Check for JavaScript syntax errors after editing.
+- Test or reason through desktop mouse drag, mouse-wheel zoom, mobile one-finger pan, two-finger pinch zoom, star hover/click, view switching, and idle camera rotation.
+- Explain exactly which sections you changed and any setup or testing steps still required.
+
+SOURCE FILE:
+The complete original Cloudflare Worker source is in ai-vault-worker.js. The request above is the change specification; do not append it to the JavaScript source.
