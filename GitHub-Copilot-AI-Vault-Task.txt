@@ -19,5 +19,5 @@ Important workflow:
 - Test or reason through desktop mouse drag, mouse-wheel zoom, mobile one-finger pan, two-finger pinch zoom, star hover/click, view switching, and idle camera rotation.
 - Explain exactly which sections you changed and any setup or testing steps still required.
 
-SOURCE FILE:
+SOURCE FILE: ai-vault-worker.js
 The complete original Cloudflare Worker source is in ai-vault-worker.js. The request above is the change specification; do not append it to the JavaScript source.
